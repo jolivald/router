@@ -13,3 +13,5 @@ $router->get('/posts/:id', function ($id) {
 $router->post('/posts/:id', function ($id) {
   echo 'poster le post n° '.$id;
 });
+
+$router->drive_check();
