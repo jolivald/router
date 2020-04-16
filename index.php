@@ -2,8 +2,11 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-$router = new App\Router($_GET['url']);
+$router = new App\Router\Router($_GET['url']);
 
+$router->get('/', function () {
+  echo 'je suis à l\'index';
+});
 $router->get('/posts', function () {
   echo 'tous les posts';
 });
